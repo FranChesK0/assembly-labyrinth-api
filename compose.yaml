@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  assembly-api:
+    container_name: assembly-api
+    build:
+      context: .
+      target: final
+    volumes:
+      - ./data:/data
+    environment:
+      CONFIG_PATH: /data/conf.yaml
+    ports:
+      - 8082:8082
