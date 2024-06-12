@@ -1,0 +1,68 @@
+{
+  "title": "COMPARE WITH PREVIOUS",
+  "description": "> READ A VALUE FROM IN|> COMPARE VALUE TO PREVIOUS VALUE|> WRITE 1 IF CHANGED BY 10 OR MORE|> IF NOT TRUE, WRITE 0 INSTEAD|> THE FIRST OUTPUT IS ALWAYS 0",
+  "streams": [
+    {
+      "index": 1,
+      "name": "IN",
+      "type": 0,
+      "max_value": 40,
+      "min_value": -20
+    },
+    {
+      "index": 10,
+      "name": "OUT",
+      "type": 1
+    }
+  ],
+  "layout": [
+    {
+      "index": 0,
+      "type": 0
+    },
+    {
+      "index": 1,
+      "type": 0
+    },
+    {
+      "index": 2,
+      "type": 0
+    },
+    {
+      "index": 3,
+      "type": 0
+    },
+    {
+      "index": 4,
+      "type": 0
+    },
+    {
+      "index": 5,
+      "type": 0
+    },
+    {
+      "index": 6,
+      "type": 0
+    },
+    {
+      "index": 7,
+      "type": 0
+    },
+    {
+      "index": 8,
+      "type": 1
+    },
+    {
+      "index": 9,
+      "type": 0
+    },
+    {
+      "index": 10,
+      "type": 0
+    },
+    {
+      "index": 11,
+      "type": 0
+    }
+  ]
+}

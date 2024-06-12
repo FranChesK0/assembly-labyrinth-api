@@ -1,0 +1,80 @@
+{
+  "title": "DIAGNOSTIC",
+  "description": "> READ A VALUE FROM IN.A AND|WRITE THE VALUE TO OUT.A|>READ A VALUE FROM IN.B AND|WRITE THE VALUE TO OUT.B",
+  "streams": [
+    {
+      "index": 0,
+      "name": "IN.A",
+      "type": 0,
+      "max_value": 90,
+      "min_value": 10
+    },
+    {
+      "index": 3,
+      "name": "IN.B",
+      "type": 0,
+      "max_value": 90,
+      "min_value": 10
+    },
+    {
+      "index": 8,
+      "name": "OUT.A",
+      "type": 1
+    },
+    {
+      "index": 11,
+      "name": "OUT.B",
+      "type": 1
+    }
+  ],
+  "layout": [
+    {
+      "index": 0,
+      "type": 0
+    },
+    {
+      "index": 1,
+      "type": 1
+    },
+    {
+      "index": 2,
+      "type": 0
+    },
+    {
+      "index": 3,
+      "type": 0
+    },
+    {
+      "index": 4,
+      "type": 0
+    },
+    {
+      "index": 5,
+      "type": 1
+    },
+    {
+      "index": 6,
+      "type": 0
+    },
+    {
+      "index": 7,
+      "type": 1
+    },
+    {
+      "index": 8,
+      "type": 0
+    },
+    {
+      "index": 9,
+      "type": 1
+    },
+    {
+      "index": 10,
+      "type": 0
+    },
+    {
+      "index": 11,
+      "type": 0
+    }
+  ]
+}

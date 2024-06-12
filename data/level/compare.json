@@ -1,0 +1,78 @@
+{
+  "title": "COMPARE IN",
+  "description": "> READ A VALUE FROM IN|> WRITE 1 TO OUT.A IF IN > 0|> WRITE 1 TO OUT.B IF IN = 0|> WRITE 1 TO OUT.C IF IN < 0|> WHEN A 1 IS NOT WRITTEN|TO AN OUTPUT WRITE A 0 INSTEAD",
+  "streams": [
+    {
+      "index": 0,
+      "name": "IN",
+      "type": 0,
+      "max_value": 2,
+      "min_value": -2
+    },
+    {
+      "index": 9,
+      "name": "OUT.A",
+      "type": 1
+    },
+    {
+      "index": 10,
+      "name": "OUT.B",
+      "type": 1
+    },
+    {
+      "index": 11,
+      "name": "OUT.C",
+      "type": 1
+    }
+  ],
+  "layout": [
+    {
+      "index": 0,
+      "type": 0
+    },
+    {
+      "index": 1,
+      "type": 0
+    },
+    {
+      "index": 2,
+      "type": 0
+    },
+    {
+      "index": 3,
+      "type": 0
+    },
+    {
+      "index": 4,
+      "type": 0
+    },
+    {
+      "index": 5,
+      "type": 1
+    },
+    {
+      "index": 6,
+      "type": 1
+    },
+    {
+      "index": 7,
+      "type": 1
+    },
+    {
+      "index": 8,
+      "type": 0
+    },
+    {
+      "index": 9,
+      "type": 0
+    },
+    {
+      "index": 10,
+      "type": 0
+    },
+    {
+      "index": 11,
+      "type": 0
+    }
+  ]
+}
