@@ -1,0 +1,101 @@
+[
+  {
+    "index": 0,
+    "code": []
+  },
+  {
+    "index": 1,
+    "code": [
+      "START:",
+      " MOV UP ACC",
+      " SAV",
+      " MOV RIGHT ACC",
+      " JLZ OUT",
+      " JEZ OUT",
+      " JMP START",
+      "OUT:",
+      " SWP",
+      " MOV ACC DOWN",
+      " JMP START"
+    ]
+  },
+  {
+    "index": 2,
+    "code": [
+      "MOV UP ACC",
+      "MOV ACC DOWN",
+      "MOV ACC LEFT",
+      "MOV ACC RIGHT"
+    ]
+  },
+  {
+    "index": 3,
+    "code": [
+      "START:",
+      " MOV UP ACC",
+      " SAV",
+      " MOV LEFT ACC",
+      " JGZ OUT",
+      " JEZ OUT",
+      " JMP START",
+      "OUT:",
+      " SWP",
+      " MOV ACC DOWN",
+      " JMP START"
+    ]
+  },
+  {
+    "index": 4,
+    "code": []
+  },
+  {
+    "index": 5,
+    "code": [
+      "MOV UP RIGHT"
+    ]
+  },
+  {
+    "index": 6,
+    "code": [
+      "START: MOV UP ACC",
+      " JLZ N",
+      " JGZ P",
+      " JEZ Z",
+      "N:",
+      " MOV LEFT DOWN",
+      " JMP START",
+      "P:",
+      " MOV RIGHT DOWN",
+      " JMP START",
+      "Z:",
+      " MOV RIGHT ACC",
+      " ADD LEFT",
+      " MOV ACC DOWN",
+      " JMP START"
+    ]
+  },
+  {
+    "index": 7,
+    "code": [
+      "MOV UP LEFT"
+    ]
+  },
+  {
+    "index": 8,
+    "code": []
+  },
+  {
+    "index": 9,
+    "code": []
+  },
+  {
+    "index": 10,
+    "code": [
+      "MOV UP DOWN"
+    ]
+  },
+  {
+    "index": 11,
+    "code": []
+  }
+]

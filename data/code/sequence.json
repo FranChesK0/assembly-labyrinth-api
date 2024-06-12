@@ -1,0 +1,94 @@
+[
+  {
+    "index": 0,
+    "code": []
+  },
+  {
+    "index": 1,
+    "code": [
+      "MOV UP ACC",
+      "SAV",
+      "SUB RIGHT",
+      "MOV ACC DOWN",
+      "SWP",
+      "MOV ACC DOWN"
+    ]
+  },
+  {
+    "index": 2,
+    "code": [
+      "MOV UP ACC",
+      "MOV ACC LEFT",
+      "MOV ACC DOWN"
+    ]
+  },
+  {
+    "index": 3,
+    "code": []
+  },
+  {
+    "index": 4,
+    "code": []
+  },
+  {
+    "index": 5,
+    "code": [
+      "START:",
+      " MOV UP ACC",
+      " JLZ HIGHER",
+      " JGZ LOWER",
+      " JEZ HIGHER",
+      "HIGHER:",
+      " MOV 1 RIGHT",
+      " JMP OUT",
+      "LOWER:",
+      " MOV -1 RIGHT",
+      " JMP OUT",
+      "OUT:",
+      " MOV UP RIGHT",
+      " JMP START"
+    ]
+  },
+  {
+    "index": 6,
+    "code": [
+      "START:",
+      " MOV LEFT ACC",
+      " JGZ FIRST",
+      " JLZ SECOND",
+      "FIRST:",
+      " MOV LEFT DOWN",
+      " MOV UP DOWN",
+      " JMP END",
+      "SECOND:",
+      " MOV UP DOWN",
+      " MOV LEFT DOWN",
+      " JMP END",
+      "END:",
+      " MOV 0 DOWN",
+      "JMP START"
+    ]
+  },
+  {
+    "index": 7,
+    "code": []
+  },
+  {
+    "index": 8,
+    "code": []
+  },
+  {
+    "index": 9,
+    "code": []
+  },
+  {
+    "index": 10,
+    "code": [
+      "MOV UP DOWN"
+    ]
+  },
+  {
+    "index": 11,
+    "code": []
+  }
+]

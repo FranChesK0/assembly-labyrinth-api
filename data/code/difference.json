@@ -1,0 +1,68 @@
+[
+  {
+    "index": 0,
+    "code": []
+  },
+  {
+    "index": 1,
+    "code": [
+      "MOV UP DOWN"
+    ]
+  },
+  {
+    "index": 2,
+    "code": [
+      "MOV UP DOWN"
+    ]
+  },
+  {
+    "index": 3,
+    "code": []
+  },
+  {
+    "index": 4,
+    "code": []
+  },
+  {
+    "index": 5,
+    "code": [
+      "MOV UP ACC",
+      "SUB RIGHT",
+      "MOV ACC DOWN"
+    ]
+  },
+  {
+    "index": 6,
+    "code": [
+      "MOV UP LEFT"
+    ]
+  },
+  {
+    "index": 7,
+    "code": []
+  },
+  {
+    "index": 8,
+    "code": []
+  },
+  {
+    "index": 9,
+    "code": [
+      "MOV UP ACC",
+      "MOV ACC DOWN",
+      "MOV ACC RIGHT"
+    ]
+  },
+  {
+    "index": 10,
+    "code": [
+      "MOV LEFT ACC",
+      "NEG",
+      "MOV ACC DOWN"
+    ]
+  },
+  {
+    "index": 11,
+    "code": []
+  }
+]

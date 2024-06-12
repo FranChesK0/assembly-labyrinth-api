@@ -1,0 +1,91 @@
+[
+  {
+    "index": 0,
+    "code": [
+      "MOV UP DOWN"
+    ]
+  },
+  {
+    "index": 1,
+    "code": []
+  },
+  {
+    "index": 2,
+    "code": []
+  },
+  {
+    "index": 3,
+    "code": []
+  },
+  {
+    "index": 4,
+    "code": [
+      "MOV UP DOWN"
+    ]
+  },
+  {
+    "index": 5,
+    "code": []
+  },
+  {
+    "index": 6,
+    "code": []
+  },
+  {
+    "index": 7,
+    "code": []
+  },
+  {
+    "index": 8,
+    "code": [
+      "MOV UP RIGHT"
+    ]
+  },
+  {
+    "index": 9,
+    "code": [
+      "START:",
+      " MOV LEFT ACC",
+      " MOV ACC RIGHT",
+      " JGZ POS",
+      " JMP OTHER",
+      "POS:",
+      " MOV 1 DOWN",
+      " JMP START",
+      "OTHER:",
+      " MOV 0 DOWN",
+      " JMP START"
+    ]
+  },
+  {
+    "index": 10,
+    "code": [
+      "START:",
+      " MOV LEFT ACC",
+      " MOV ACC RIGHT",
+      " JEZ ZERO",
+      " JMP OTHER",
+      "ZERO:",
+      " MOV 1 DOWN",
+      " JMP START",
+      "OTHER:",
+      " MOV 0 DOWN",
+      " JMP START"
+    ]
+  },
+  {
+    "index": 11,
+    "code": [
+      "START:",
+      " MOV LEFT ACC",
+      " JLZ NEGAT",
+      " JMP OTHER",
+      "NEGAT:",
+      " MOV 1 DOWN",
+      " JMP START",
+      "OTHER:",
+      " MOV 0 DOWN",
+      " JMP START"
+    ]
+  }
+]
