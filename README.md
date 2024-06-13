@@ -176,17 +176,19 @@ NEGATIVE:
 
 Assembly Labyrinth is very easy to install and deploy in a Docker container.
 
-Clone repositories: [API](https://github.com/FranChesK0/assembly-labyrinth) and [WEB](https://github.com/FranChesK0/assembly-labyrinth-web)
+Clone repositories: [API](https://github.com/FranChesK0/assembly-labyrinth) and [WEB](https://github.com/MaFFioZZo/assembly-labyrinth)
 
 ```sh
-git clone https://github.com/FranChesK0/assembly-labyrinth
-git clone https://github.com/FranChesK0/assembly-labyrinth-web
+mkdir assembly-labyrinth
+cd assembly-labyrinth
+git clone https://github.com/FranChesK0/assembly-labyrinth api
+git clone https://github.com/MaFFioZZo/assembly-labyrinth web
 ```
 
 In web add api.js file.
 
 ```sh
-cd assembly-labyrinth-web
+cd web
 touch api.js
 ```
 
@@ -196,21 +198,22 @@ This file should like this:
 const api = "https://your-domain-with-api/levels"
 ```
 
-When ready, simply use the Dockerfile to build the image.
+When ready, simply use the Dockerfile to build the images of api and web.
 
 ```sh
-cd assembly-labyrinth
+cd api
 docker-compose build
 ```
 ```sh
-cd assembly-labyrinth-web
+cd web
 docker-compose build
 ```
 
 This will create the images and pull in the necessary dependencies.
 
-By default, the Docker will expose ports 80 and 8082, so change this within the
-compose.yaml if necessary. Once done, run the Docker image:
+By default, the Docker will expose ports 80 for web and 8082 for api,
+so change this within the compose.yaml if necessary. Once done, run 
+the Docker image:
 
 ```sh
 docker-compose up -d
