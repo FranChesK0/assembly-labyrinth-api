@@ -19,19 +19,19 @@ continues to the first instruction.
 All registers store integer values between -999 and 999 (inclusive).
 
 #### 1.1. ACC
-_Type: Internal_
+*Type: Internal*
 
 ACC is the primary storage register for a Node. ACC is used as the implicit
 source or destiation operand of many instructions.
 
 #### 1.2. BAK
-_Type: Internal (non-addressable)_
+*Type: Internal (non-addressable)*
 
 BAK is temporary storage for values in ACC. It is only accessible through the
 SAV and SWP instructions, and cannot be read or written directly.
 
 #### 1.3. LEFT, RIGHT, UP, DOWN
-_Type: Port_
+*Type: Port*
 
 The four communication registers UP, DOWN, LEFT and RIGHT correspond to the four
 ports that all Nodes use to communicate with topologically adjacent nodes. Some
@@ -40,15 +40,15 @@ indefinitely if a READ or WRITE command is issued.
 
 ### 2. Instruction Set
 
-<SRC> and <DST> instruction parameters may specify a port or internal register.
+_SRC_ and _DST_ instruction parameters may specify a port or internal register.
 Any use of a port will block until the corresponding node connected to that
 port completes the communication by reading or writing a value. Additionally,
-a <SRC> parameter may be a literal integer value between -999 and 999(inclusive).
+a _SRC_ parameter may be a literal integer value between -999 and 999(inclusive).
 
-<LABEL> parameters are arbitrary textual names used to specify jump targets.
+_LABEL_ parameters are arbitrary textual names used to specify jump targets.
 
 #### 2.1. Labels
-_Syntax: <LABEL>:_
+*Syntax: _LABEL_:*
 
 Labels are used to identify targets for jump instructions. When used as jump
 target, the instruction following the label will be executed next.
@@ -59,9 +59,9 @@ LOOP:       This label is on a line by itself.
     MOV 8 ACC
 ```
 #### 2.2. MOV
-_Syntax: MOV <SRC> <DST>_
+*Syntax: MOV _SRC_ _DST_*
 
-<SRC> is read and the resulting value is written to <DST>.
+_SRC_ is read and the resulting value is written to _DST_.
 
 Examples:
 ```
@@ -70,19 +70,19 @@ MOV LEFT RIGHT      A value is read from the LEFT port, and then written to RIGH
 ```
 
 #### 2.3. SWP
-_Syntax: SWP_
+*_Syntax: SWP_*
 
 The values of ACC and BAK are exchanged.
 
 #### 2.4. SAV
-_Syntax: SAV_
+*_Syntax: SAV_*
 
 The value of ACC is written to BAK.
 
 #### 2.5. ADD
-_Syntax: ADD <SRC>_
+*Syntax: ADD _SRC_*
 
-The value of <SRC> is added to the value of ACC and the result is stored to ACC.
+The value of _SRC_ is added to the value of ACC and the result is stored to ACC.
 
 Examples:
 ```
@@ -91,9 +91,9 @@ ADD LEFT    A value is read from the LEFT port, and then added to ACC.
 ```
 
 #### 2.6. SUB
-_Syntax: SUB <SRC>_
+*Syntax: SUB _SRC_*
 
-The value of <SRC> is subtracted from the value of ACC and the result is stored
+The value of _SRC_ is subtracted from the value of ACC and the result is stored
 to ACC.
 
 Examples:
@@ -103,43 +103,43 @@ SUB LEFT    A value is read from the LEFT port, and then subtracted from ACC.
 ```
 
 #### 2.7. NEG
-_Syntax: NEG_
+*Syntax: NEG*
 
 The value of ACC is arithmetically negated. A value of zero remains the same.
 
 #### 2.8. JMP
-_Syntax: JMP <LABEL>_
+*Syntax: JMP _LABEL_*
 
-The instruction after the label <LABEL> will be executed next.
+The instruction after the label _LABEL_ will be executed next.
 
 #### 2.9. JEZ
-_Syntax: JEZ <LABEL>_
+*Syntax: JEZ _LABEL_*
 
-The instruction after the label <LABEL> will be executed next if the value
+The instruction after the label _LABEL_ will be executed next if the value
 of ACC is zero.
 
 #### 2.10. JNZ
-_Syntax: JNZ <LABEL>_
+*Syntax: JNZ _LABEL_*
 
-The instruction after the label <LABEL> will be executed next if the value
+The instruction after the label _LABEL_ will be executed next if the value
 of ACC is not zero.
 
 #### 2.11. JGZ
-_Syntax: JGZ <LABEL>_
+*Syntax: JGZ _LABEL_*
 
-The instruction after the label <LABEL> will be executed next if the value
+The instruction after the label _LABEL_ will be executed next if the value
 of ACC is greater than zero.
 
 #### 2.12. JLZ
-_Syntax: JLZ <LABEL>_
+*Syntax: JLZ _LABEL_*
 
-The instruction after the label <LABEL> will be executed next if the value
+The instruction after the label _LABEL_ will be executed next if the value
 of ACC is less than zero.
 
 #### 2.13. JRO
-_Syntax: JRO <SRC>_
+*Syntax: JRO _SRC_*
 
-The instruction at the offset specified by <SRC> relative to the current
+The instruction at the offset specified by _SRC_ relative to the current
 instruction will be executed next.
 
 ### 3. Example Programs
