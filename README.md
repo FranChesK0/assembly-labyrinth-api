@@ -222,6 +222,7 @@ your preferred browser.
 ## Authors
 
 [FranChesK0](https://github.com/FranChesK0) - [API](https://github.com/FranChesK0/assembly-labyrinth)
+
 [MaFFioZZo](https://github.com/MaFFioZZo) - [WEB](https://github.com/MaFFioZZo/assembly-labyrinth)
 
 ## License
