@@ -176,12 +176,12 @@ NEGATIVE:
 
 Assembly Labyrinth is very easy to install and deploy in a Docker container.
 
-Clone repositories: [API](https://github.com/FranChesK0/assembly-labyrinth) and [WEB](https://github.com/MaFFioZZo/assembly-labyrinth)
+Clone repositories: [API](https://github.com/FranChesK0/assembly-labyrinth-api) and [WEB](https://github.com/MaFFioZZo/assembly-labyrinth)
 
 ```sh
 mkdir assembly-labyrinth
 cd assembly-labyrinth
-git clone https://github.com/FranChesK0/assembly-labyrinth api
+git clone https://github.com/FranChesK0/assembly-labyrinth-api api
 git clone https://github.com/MaFFioZZo/assembly-labyrinth web
 ```
 
@@ -224,7 +224,7 @@ your preferred browser.
 
 ## Authors
 
-[FranChesKo](https://github.com/FranChesK0) - [API](https://github.com/FranChesK0/assembly-labyrinth)
+[FranChesKo](https://github.com/FranChesK0) - [API](https://github.com/FranChesK0/assembly-labyrinth-api)
 
 [MaFFioZZo](https://github.com/MaFFioZZo) - [WEB](https://github.com/MaFFioZZo/assembly-labyrinth)
 
